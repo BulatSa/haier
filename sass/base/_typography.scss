@@ -1,0 +1,72 @@
+body {
+	font-family: $font;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #353434;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	&[href*=tel] {
+		white-space: nowrap;
+	}
+}
+
+h1, .h1 {
+	font-size: 72px;
+	font-weight: 600;
+	line-height: 1.2;
+	@include res(xl) {
+		font-size: 64px;
+	}
+	@include res(l) {
+		font-size: 52px;
+	}
+	@include res(m) {
+		font-size: 48px;
+	}
+	@include res(s) {
+		font-size: 36px;
+	}
+	@include res(xs) {
+		font-size: 28px;
+	}
+}
+
+h2, .h2 {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1.2;
+	@include res(xl) {
+		font-size: 42px;
+	}
+	@include res(l) {
+		font-size: 38px;
+	}
+	@include res(m) {
+		font-size: 32px;
+	}
+	@include res(s) {
+		font-size: 28px;
+	}
+	@include res(xs) {
+		font-size: 24px;
+	}
+}
+
+h3, .h3 {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.2;
+	@include res(l) {
+		font-size: 28px;
+	}
+	@include res(l) {
+		font-size: 26px;
+	}
+	@include res(s) {
+		font-size: 20px;
+	}
+}

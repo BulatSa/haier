@@ -1,0 +1,6 @@
+.big-head-sec {
+  background: url("../img/big-header/bg-big-header.jpg") no-repeat center top;
+  background-size: cover; }
+
+.big-head {
+  min-height: 100vh; }
