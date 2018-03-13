@@ -1,0 +1,34 @@
+.page-title {
+	padding-left: 4px;
+	padding-bottom: $pad-xs;
+	font-size: 14px;
+	font-weight: 600;
+	color: #000;
+	text-transform: uppercase;
+	span {
+		position: relative;
+		display: inline-block;
+		padding-right: 50px;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 7px;
+			right: 3px;
+			display: block;
+			width: 40px;
+			height: 2px;
+			background: #000;
+		}
+	}
+	p {
+		display: inline-block;
+	}
+	&--white {
+		color: #fff;
+		span {
+			&:after {
+				background: #fff;
+			}
+		}
+	}
+}

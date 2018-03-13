@@ -18,6 +18,11 @@
 	user-select: none;
 	background-color: $red;
 	transition: all 0.3s ease;
+	@include res(l) {
+		min-width: 200px;
+		padding: 13px 25px;
+		font-size: 14px;
+	}
 
 	&:focus{
 		outline: none;

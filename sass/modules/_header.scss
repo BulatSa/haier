@@ -3,12 +3,15 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #00124e;
 	z-index: 1;
 	@include res(m) {
 		position: relative;
 		top: initial;
 		left: initial;
+		background: #00124e;
+	}
+	&.active {
+		background: #00124e;
 	}
 }
 

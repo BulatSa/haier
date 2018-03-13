@@ -63,6 +63,23 @@
 	flex-wrap: wrap;
 }
 
+.def-sec {
+	padding-top: $pad-xl;
+	padding-bottom: $pad-xl;
+	@include res(xl) {
+		padding-top: $pad-l;
+		padding-bottom: $pad-l;
+	}
+	@include res(l) {
+		padding-top: $pad-m;
+		padding-bottom: $pad-m;
+	}
+	@include res(s) {
+		padding-top: $pad-s;
+		padding-bottom: $pad-s;
+	}
+}
+
 .clearfix{
 	&:before{
 		content: " ";

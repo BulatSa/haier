@@ -1,0 +1,19 @@
+.page-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000; }
+  .page-title span {
+    position: relative;
+    display: inline-block;
+    padding-right: 50px; }
+    .page-title span:after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: 0;
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: #000; }
+  .page-title--white {
+    color: #fff; }

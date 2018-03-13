@@ -174,7 +174,29 @@ $(function () {
 	}, {
 		offset: '85%'
 	});
+
+	var aboutBigBg = new Vivus('about-big-bg', {
+		duration: 400,
+		start: 'manual'
+	});
+
+	$('#about-big-bg').waypoint(function () {
+		aboutBigBg.play();
+	}, {
+		offset: '85%'
+	});
 });
 /***********************
  Waypoints END
  ***********************/
+
+
+/***********************
+Vivus BEGIN
+***********************/
+$(function () {
+
+});
+/***********************
+Vivus END
+***********************/
