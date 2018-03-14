@@ -9,10 +9,10 @@
 .about__info {
 	position: relative;
 	max-width: 575px;
-	padding-bottom: 400px;
+	padding-bottom: 470px;
 	z-index: 1;
 	@include res(l) {
-		padding-bottom: 340px;
+		padding-bottom: 390px;
 	}
 	@include res(s) {
 		padding-bottom: 0;
@@ -21,6 +21,9 @@
 		padding-bottom: $pad-s;
 		@include res(s) {
 			padding-bottom: $pad-xs;
+		}
+		&:last-child {
+			padding-bottom: 0;
 		}
 	}
 }
@@ -86,12 +89,13 @@
 
 .about__img {
 	position: absolute;
-	bottom: 0;
+	bottom: 70px;
 	left: 50%;
 	transform: translate3d(-50%,0,0);
 	z-index: 0;
 	@include res(l) {
 		left: 0;
+		bottom: 40px;
 		transform: translate3d(0,0,0);
 	}
 	svg {

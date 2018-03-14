@@ -203,6 +203,62 @@
 					<img src="img/benefits/slide-1.png" alt="">
 				</div>
 			</div>
+			<div class="benefits__slide">
+				<div class="user-content">
+					<p class="h3">Расширенная гарантия</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at, atque autem, cupiditate eligendi eum hic impedit inventore, ipsum maiores neque odit provident quam quo ratione repudiandae sapiente similique vel.</p>
+				</div>
+				<div class="benefits__slide-img">
+					<img src="img/benefits/slide-1.png" alt="">
+				</div>
+			</div>
+			<div class="benefits__slide">
+				<div class="user-content">
+					<p class="h3">Вывоз старой техники</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error fugit inventore omnis placeat praesentium reprehenderit, sit soluta ullam. Accusantium laboriosam maxime nobis numquam perspiciatis possimus quod saepe suscipit vitae voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam consectetur cum harum ipsam magni modi, optio. Dicta error in ipsam. Earum explicabo fugiat itaque magni minima, possimus qui quo.</p>
+				</div>
+				<div class="benefits__slide-img">
+					<img src="img/benefits/slide-1.png" alt="">
+				</div>
+			</div>
+			<div class="benefits__slide">
+				<div class="user-content">
+					<p class="h3">Сервисное обслуживание</p>
+					<p>Жители Российской Федерации могут воспользоваться бесплатной доставкой. О доставке можно прочитать на нашем официальном сайте в разделе Доставка.</p>
+				</div>
+				<div class="benefits__slide-img">
+					<img src="img/benefits/slide-1.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="benefits__slider-nav">
+			<span>Бесплатная доставка</span>
+			<span>Расширен&shy;ная гарантия</span>
+			<span>Вывоз старой техники</span>
+			<span>Сервисное обслужива&shy;ние</span>
+		</div>
+	</div>
+	<div class="benefits-progress stop-animation"></div>
+</section>
+
+
+<section class="adress-sec def-sec">
+	<div class="adress container">
+		<div class="page-title anim">
+			<span>03</span>
+			<p>как к нам добраться</p>
+		</div>
+		<div class="adress__info">
+			<div class="user-content">
+				<p class="h2">Торговый Центр Сити Молл</p>
+				<p>Сотрудники брендшопа всегда помогут определиться с покупкой, ответят на вопросы и дадут рекомендации, чтобы техника прослужила дольше. Мы также с радостью организуем доставку и установку, и все это — совершенно бесплатно благодаря принятым в Haier стандартам обслуживания.</p>
+			</div>
+			<div class="adress__info-contact">
+				<p><span>Адрес: </span>Набережные Челны, Проспект Чулман, 87А</p>
+				<p><span>Телефон: </span><a href="tel:88552910107">+7 (8552) 91-01-07</a></p>
+				<p><span>Режим работы: </span>10:00 — 22:00</p>
+			</div>
+			<a href="#" class="btn"><i class="i-square"></i>смотреть 3d тур</a>
 		</div>
 	</div>
 </section>

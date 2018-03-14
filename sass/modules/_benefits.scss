@@ -5,6 +5,53 @@
 
 .benefits {
 	color: #fff;
+	.arrow-prev, .arrow-next {
+		position: absolute;
+		top: 0;
+		right: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		color: #fff;
+		border: 1px solid #fff;
+		border-radius: 0 25px 25px 0;
+		font-size: 16px;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		z-index: 2;
+		@include res(l) {
+			top: -80px;
+			width: 45px;
+			height: 45px;
+		}
+		@include res(s) {
+			top: 100px;
+			width: 40px;
+			height: 40px;
+			right: 30px;
+		}
+		&:hover {
+			color: $light-blue;
+			border-color: $light-blue;
+			@include res(l) {
+				color: inherit;
+				border-color: inherit;
+			}
+		}
+	}
+	.arrow-prev {
+		right: 90px;
+		border-radius: 25px 0 0 25px;
+		@include res(l) {
+			right: 85px;
+		}
+		@include res(s) {
+			right: initial;
+			left: -10px;
+		}
+	}
 }
 
 .benefits__info {
@@ -12,7 +59,7 @@
 	top: 60px;
 	left: 15px;
 	max-width: 575px;
-	@include res(s) {
+	@include res(l) {
 		position: relative;
 		top: initial;
 		left: initial;
@@ -20,52 +67,144 @@
 	}
 }
 
-.benefits__slider {}
+.benefits__slider {
+	margin-right: -40px;
+
+}
 
 .benefits__slide {
 	position: relative;
-	min-height: 560px;
+	min-height: 580px;
 	padding-top: 340px;
-	@include res(s) {
-		display: flex;
-		flex-direction: column-reverse;
-		padding-top: 0;
+	padding-bottom: 60px;
+	padding-right: 40px;
+	opacity: 0;
+	outline: none;
+	transition: opacity 0.3s ease;
+	@include res(l) {
+		display: flex!important;
+		align-items: center;
 		min-height: initial;
+		padding-top: 0px;
+	}
+	@include res(s) {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		padding-top: 0;
+		padding-bottom: 40px;
 	}
 	.user-content {
 		max-width: 530px;
 		width: 50%;
 		@include res(l) {
 			width: 55%;
+			padding-right: 3%;
 		}
 		@include res(s) {
 			width: 100%;
+			padding-right: 0;
 		}
+	}
+	&.slick-current {
+		opacity: 1;
 	}
 }
 
 .benefits__slide-img {
 	position: absolute;
-	right: -40px;
+	right: 0px;
 	top: 80px;
 	width: 50%;
 	@include res(l) {
-		width: 45%;
+
 		top: 240px;
 	}
-	@include res(s) {
+	@include res(l) {
 		position: relative;
 		top: initial;
 		right: initial;
+		width: 45%;
+	}
+	@include res(s) {
 		width: 100%;
 	}
 	img {
 		display: block;
 		max-width: 100%;
+		max-height: 500px;
+		@include res(l) {
+			max-height: 340px;
+		}
 		@include res(s) {
 			max-width: 400px;
 			width: 100%;
 			margin-bottom: $pad-xxs;
 		}
+	}
+}
+
+.benefits__slider-nav {
+	display: flex;
+	max-width: 575px;
+	span {
+		display: block;
+		width: 25%;
+		padding-right: $pad-xs;
+		font-size: 14px;
+		color: #fff;
+		outline: none;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		@include res(s) {
+			font-size: 12px;
+			padding-right: $pad-xxs;
+		}
+		@include res(xs) {
+			font-size: 10px;
+			padding-right: 15px;
+		}
+		&:hover {
+			color: $light-blue;
+			@include res(l) {
+				color: inherit;
+			}
+		}
+		&:last-child {
+			@include res(s) {
+				width: 25%!important;
+				padding-right: 0;
+			}
+		}
+		&.slick-current {
+			color: $light-blue;
+		}
+	}
+}
+
+.benefits-progress {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 8px;
+	transition: all 4s ease;
+	background: $light-blue;
+	&.play-animation {
+		animation-name: progress-bar;
+		animation-duration: 4s;
+		animation-play-state: running;
+		animation-iteration-count: infinite;
+	}
+	&.stop-animation {
+		animation-play-state: paused;
+	}
+}
+
+@keyframes progress-bar {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
 	}
 }

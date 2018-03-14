@@ -1,0 +1,27 @@
+.adress-sec {}
+
+.adress {}
+
+.adress__info {
+	max-width: 655px;
+	.user-content {
+		padding-bottom: $pad-s;
+		@include res(s) {
+			padding-bottom: $pad-xs;
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	.btn {
+		color: #fff;
+	}
+}
+
+.adress__info-contact {
+	padding-left: 40px;
+	padding-bottom: $pad-xs;
+	span {
+		font-weight: 600;
+	}
+}

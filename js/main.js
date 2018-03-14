@@ -176,14 +176,14 @@ $(function () {
 	});
 
 	var aboutBigBg = new Vivus('about-big-bg', {
-		duration: 400,
+		duration: 300,
 		start: 'manual'
 	});
 
 	$('#about-big-bg').waypoint(function () {
 		aboutBigBg.play();
 	}, {
-		offset: '85%'
+		offset: '75%'
 	});
 });
 /***********************
@@ -192,11 +192,58 @@ $(function () {
 
 
 /***********************
-Vivus BEGIN
+Slick BEGIN
 ***********************/
 $(function () {
+	var $progressBar = $('.benefits-progress');
+	if ($(window).width > 1024) {
+		$('.benefits__slider').on('init', function () {
+			$progressBar.addClass('play-animation');
+		});
 
+		$('.benefits__slider').on('beforeChange', function () {
+			$progressBar.removeClass('play-animation');
+		});
+
+		$('.benefits__slider').on('afterChange', function () {
+			$progressBar.addClass('play-animation');
+		});
+
+		$('.benefits__slider').hover(
+			function () {
+				$progressBar.addClass('stop-animation');
+			},
+			function () {
+				$progressBar.removeClass('stop-animation');
+			}
+		);
+	}
+
+	$('.benefits__slider').slick({
+		slidesToShow: 1,
+		fade: true,
+		adaptiveHeight: true,
+		autoplay: true,
+		autoplaySpeed: 3800,
+		prevArrow: '<span class="arrow-prev"><i class="i-prev"></i></span>',
+		nextArrow: '<span class="arrow-next"><i class="i-next"></i></span>',
+		asNavFor: '.benefits__slider-nav',
+		responsive: [{
+			breakpoint: 1024,
+			settings: {
+				autoplay: false
+			}
+		}]
+	});
+
+	$('.benefits__slider-nav').slick({
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		infinite: false,
+		focusOnSelect: true,
+		asNavFor: '.benefits__slider'
+	});
 });
 /***********************
-Vivus END
+Slick END
 ***********************/
