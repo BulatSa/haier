@@ -19,11 +19,18 @@
 	}
 	.user-content {
 		padding-bottom: $pad-s;
+		opacity: 0;
+		transform: translate3d(0,20px,0);
+		transition: all 0.6s ease;
 		@include res(s) {
 			padding-bottom: $pad-xs;
 		}
 		&:last-child {
 			padding-bottom: 0;
+		}
+		&.animated {
+			opacity: 1;
+			transform: translate3d(0,0,0);
 		}
 	}
 }
@@ -45,6 +52,9 @@
 	padding-bottom: $pad-s;
 	font-size: 18px;
 	line-height: 1.2;
+	opacity: 0;
+	transform: translate3d(0,20px,0);
+	transition: all 0.6s ease;
 	@include res(l) {
 		font-size: 16px;
 	}
@@ -68,6 +78,10 @@
 		@include res(xs) {
 			display: none;
 		}
+	}
+	&.animated {
+		opacity: 1;
+		transform: translate3d(0,0,0);
 	}
 }
 

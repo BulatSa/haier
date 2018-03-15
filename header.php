@@ -43,10 +43,10 @@
 			<img src="img/logo-top.svg" alt="">
 		</div>
 		<nav class="header__nav">
-			<a href="#">О магазине</a>
-			<a href="#">Преимущества</a>
-			<a href="#">3d тур</a>
-			<a href="#">Как добраться</a>
+			<a href="#about" class="scrollto">О магазине</a>
+			<a href="#benefits" class="scrollto">Преимущества</a>
+			<a href="#adress" class="scrollto">3d тур</a>
+			<a href="#map" class="scrollto">Как добраться</a>
 		</nav>
 		<div class="header__contact">
 			<span>Магазин в Набережных Челнах</span>

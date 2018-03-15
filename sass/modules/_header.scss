@@ -3,14 +3,15 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1;
+	transition: all 0.3s ease;
+	z-index: 5;
 	@include res(m) {
 		position: relative;
 		top: initial;
 		left: initial;
 		background: #00124e;
 	}
-	&.active {
+	&.blue {
 		background: #00124e;
 	}
 }
@@ -21,10 +22,8 @@
 	justify-content: space-between;
 	min-height: 92px;
 	@include res(xl) {
-		padding-left: 185px;
-	}
-	@include res(l) {
 		min-height: 70px;
+		padding-left: 185px;
 	}
 	@include res(m) {
 		justify-content: flex-end;
@@ -47,11 +46,6 @@
 	padding-right: 12px;
 	background: #fff;
 	@include res(xl) {
-		//position: relative;
-		//top: initial;
-		//left: initial;
-	}
-	@include res(l) {
 		height: 70px;
 	}
 	@include res(m) {
@@ -88,8 +82,15 @@
 		padding-right: 10px;
 		font-size: 14px;
 		text-transform: uppercase;
+		transition: all 0.3s ease;
 		@include res(l) {
 			font-size: 12px;
+		}
+		&:hover {
+			color: $light-blue;
+			@include res(l) {
+				color: inherit;
+			}
 		}
 	}
 }
@@ -108,8 +109,6 @@
 		position: relative;
 		top: initial;
 		right: initial;
-	}
-	@include res(l) {
 		height: 70px;
 	}
 	@include res(s) {

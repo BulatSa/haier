@@ -12,13 +12,13 @@
 				<span>Набережные Челны, проспект Чулман, 87А</span>
 				<span>10:00 - 22:00</span>
 			</div>
-			<a href="#" class="btn"><i class="i-geo"></i><span>Как добраться</span></a>
+			<a href="#map" class="btn scrollto"><i class="i-geo"></i><span>Как добраться</span></a>
 		</div>
 	</div>
 </section>
 
 
-<section class="about-sec def-sec">
+<section class="about-sec def-sec" id="about">
 	<div class="about container">
 		<div class="page-title anim">
 			<span>01</span>
@@ -181,13 +181,13 @@
 </section>
 
 
-<section class="benefits-sec def-sec">
+<section class="benefits-sec def-sec" id="benefits">
 	<div class="benefits container">
 		<div class="page-title page-title--white anim">
 			<span>02</span>
 			<p>преимущества</p>
 		</div>
-		<div class="benefits__info">
+		<div class="benefits__info anim">
 			<div class="user-content">
 				<p class="h2">Плюсы покупки в брендшопе Haier</p>
 				<p>Нам важно, чтобы каждый человек, посетивший магазин Haier, стал нашим постоянным покупателем. Для этого мы создали совершенный клиентский сервис.</p>
@@ -206,19 +206,19 @@
 			<div class="benefits__slide">
 				<div class="user-content">
 					<p class="h3">Расширенная гарантия</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at, atque autem, cupiditate eligendi eum hic impedit inventore, ipsum maiores neque odit provident quam quo ratione repudiandae sapiente similique vel.</p>
+					<p>Общая гарантия на всю инновационную продукцию Haier.</p>
 				</div>
 				<div class="benefits__slide-img">
-					<img src="img/benefits/slide-1.png" alt="">
+					<img src="img/benefits/slide-2.png" alt="">
 				</div>
 			</div>
 			<div class="benefits__slide">
 				<div class="user-content">
 					<p class="h3">Вывоз старой техники</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error fugit inventore omnis placeat praesentium reprehenderit, sit soluta ullam. Accusantium laboriosam maxime nobis numquam perspiciatis possimus quod saepe suscipit vitae voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam consectetur cum harum ipsam magni modi, optio. Dicta error in ipsam. Earum explicabo fugiat itaque magni minima, possimus qui quo.</p>
+					<p>Грамотно утилизируем старую технику.</p>
 				</div>
 				<div class="benefits__slide-img">
-					<img src="img/benefits/slide-1.png" alt="">
+					<img src="img/benefits/slide-3.png" alt="">
 				</div>
 			</div>
 			<div class="benefits__slide">
@@ -227,7 +227,7 @@
 					<p>Жители Российской Федерации могут воспользоваться бесплатной доставкой. О доставке можно прочитать на нашем официальном сайте в разделе Доставка.</p>
 				</div>
 				<div class="benefits__slide-img">
-					<img src="img/benefits/slide-1.png" alt="">
+					<img src="img/benefits/slide-4.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -242,13 +242,13 @@
 </section>
 
 
-<section class="adress-sec def-sec">
+<section class="adress-sec def-sec" id="adress">
 	<div class="adress container">
 		<div class="page-title anim">
 			<span>03</span>
 			<p>как к нам добраться</p>
 		</div>
-		<div class="adress__info">
+		<div class="adress__info anim">
 			<div class="user-content">
 				<p class="h2">Торговый Центр Сити Молл</p>
 				<p>Сотрудники брендшопа всегда помогут определиться с покупкой, ответят на вопросы и дадут рекомендации, чтобы техника прослужила дольше. Мы также с радостью организуем доставку и установку, и все это — совершенно бесплатно благодаря принятым в Haier стандартам обслуживания.</p>
@@ -258,7 +258,127 @@
 				<p><span>Телефон: </span><a href="tel:88552910107">+7 (8552) 91-01-07</a></p>
 				<p><span>Режим работы: </span>10:00 — 22:00</p>
 			</div>
-			<a href="#" class="btn"><i class="i-square"></i>смотреть 3d тур</a>
+			<a href="#" class="btn anim"><i class="i-square"></i>смотреть 3d тур</a>
+		</div>
+	</div>
+	<div class="adress-bg anim">
+		<div class="trinagle-list">
+			<img src="img/map/triangle-1.png" class="triangle-1 anim" alt="">
+			<img src="img/map/triangle-2.png" class="triangle-2 anim" alt="">
+			<img src="img/map/triangle-3.png" class="triangle-3 anim" alt="">
+			<img src="img/map/triangle-4.png" class="triangle-4 anim" alt="">
+			<img src="img/map/triangle-5.png" class="triangle-5 anim" alt="">
+			<img src="img/map/triangle-6.png" class="triangle-6 anim" alt="">
+			<img src="img/map/triangle-7.png" class="triangle-7 anim" alt="">
+			<img src="img/map/triangle-8.png" class="triangle-8 anim" alt="">
+			<img src="img/map/triangle-9.png" class="triangle-9 anim" alt="">
+		</div>
+	</div>
+</section>
+
+
+<section class="map-sec" id="map">
+	<div class="map-google">
+		<div id="contact-map"></div>
+		<script>
+			function initMap() {
+				var latLng= {};
+				latLng.lat = 55.744728;
+				latLng.lng = 52.380604;
+				var styles= [{"stylers": [{"saturation": -100}]}];
+				var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
+
+				var mapOptions = {
+					zoom: 16,
+					scrollwheel: false,
+					mapTypeControl: false,
+					zoomControlOptions: {
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					center: new google.maps.LatLng(latLng.lat, latLng.lng)
+				};
+
+				var mapElement = document.getElementById('contact-map');
+
+				var map = new google.maps.Map(mapElement, mapOptions);
+				map.mapTypes.set('map_style', styledMap);
+				map.setMapTypeId('map_style');
+
+
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(55.744728, 52.380604),
+					map: map,
+					title: 'Набережные Челны, Проспект Чулман, 87А',
+					icon: '/img/map-bubble.png'
+				});
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQfEu_8-pHG14T3d1VrAhof5J4UWKe7PE&callback=initMap" async defer>
+		</script>
+	</div>
+	<div class="map container">
+		<div class="map__info anim">
+			<p class="h3">Набережные Челны</p>
+			<p><span>Торговый центр Сити Молл:</span> Проспект Чулман, 87А</p>
+			<p><span>Режим работы: </span>10:00 — 22:00</p>
+			<p><span>Телефон: </span><a href="tel:88552910107">+7 (8552) 91-01-07</a></p>
+		</div>
+	</div>
+</section>
+
+
+<section class="footer-sec def-sec-top">
+	<div class="footer-bg"></div>
+	<div class="footer container">
+		<div class="footer__top">
+			<div class="footer__top-logo">
+				<img src="img/logo-top.svg" alt="">
+			</div>
+			<div class="footer__top-contact">
+				<div class="footer__top-contact-icon">
+					<i class="i-headphone"></i>
+				</div>
+				<div class="footer__top-contact-phone">
+					<p>МАГАЗИН В НАБЕРЕЖНЫХ ЧЕЛНАХ</p>
+					<a href="tel:88552910107">8 (8552) 91-01-07</a>
+				</div>
+			</div>
+			<div class="footer__top-soc">
+				<a href="#" target="_blank"><i class="i-soc-fb"></i></a>
+				<a href="#" target="_blank"><i class="i-soc-vk"></i></a>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-col">
+				<span>©2018 Haier Inc.</span>
+				<span>Авторские права защищены.</span>
+				<a href="#" target="_blank">Сайт бренда Haier</a>
+			</div>
+			<div class="footer__bottom-col">
+				<span>ООО «ХАР»</span>
+				<span><a href="mailto:support@haierrussia.ru">support@haierrussia.ru</a></span>
+			</div>
+			<div class="footer__bottom-col">
+				<span>ИНН 1650292810 / КПП 502443001</span>
+				<span>ОГРН 1141650016540</span>
+			</div>
+			<div class="footer__bottom-col footer__bottom-col--develop">
+				<a href="https://penbrain.ru/" target="_blank"><img src="img/footer/develop.png" alt=""></a>
+			</div>
+		</div>
+		<div class="footer__descr">
+			<div class="footer__descr-info">
+				<img src="img/footer/credit.png" alt="">
+				<div class="user-content user-content--mini">
+					<p>Кредит предоставляет ООО «Хоум Кредит энд Финанс Банк».</p>
+					<p>Генеральная лицензия № 316 Банка России от 15 марта 2012 г.</p>
+				</div>
+			</div>
+			<div class="footer__descr-info">
+				<div class="user-content user-content--mini">
+					<p>"Источник: "Евромонитор Интернешнл Лтд"; "Бытовая техника-2018", доля изделия в процентах, данные за 2017 год." Категория "Крупная бытовая техника" объединяет посудомоечные машины, бытовые стиральные машины, крупные электроплиты, микроволновые печи и холодильную технику.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

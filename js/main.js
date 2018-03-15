@@ -153,9 +153,19 @@ $(function () {
  Прокрутка к секциям BEGIN
  ***********************/
 $(function () {
-	$('.scrollto').on('click', function () {
+
+	$('.scrollto').on('click', function (e) {
 		var elementClick = $(this).attr("href");
-		var destination = $(elementClick).offset().top;
+
+		var destination = $(elementClick).offset().top - 92;
+
+		if (($(window).width() > 768) && ($(window).width() < 1480)) {
+			destination = $(elementClick).offset().top - 70;
+		}
+		if ($(window).width() < 768) {
+			destination = $(elementClick).offset().top;
+		}
+
 		$('html,body').stop().animate({scrollTop: destination}, 1000);
 		return false;
 	});
@@ -192,11 +202,29 @@ $(function () {
 
 
 /***********************
+ Top panel BEGIN
+ ***********************/
+$(function($){
+	var top_panel = $('.header-sec');
+	window.onscroll = function() {
+		if (window.pageYOffset > 30){
+			top_panel.addClass('blue');
+		} else {
+			top_panel.removeClass('blue');
+		}
+	};
+});
+/***********************
+ Top panel END
+ ***********************/
+
+
+/***********************
 Slick BEGIN
 ***********************/
 $(function () {
 	var $progressBar = $('.benefits-progress');
-	if ($(window).width > 1024) {
+	if ($(window).width() > 1024) {
 		$('.benefits__slider').on('init', function () {
 			$progressBar.addClass('play-animation');
 		});
@@ -229,7 +257,7 @@ $(function () {
 		nextArrow: '<span class="arrow-next"><i class="i-next"></i></span>',
 		asNavFor: '.benefits__slider-nav',
 		responsive: [{
-			breakpoint: 1024,
+			breakpoint: 1025,
 			settings: {
 				autoplay: false
 			}

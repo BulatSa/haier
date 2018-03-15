@@ -80,4 +80,11 @@ h3, .h3 {
 	@include res(l) {
 		font-size: 14px;
 	}
+	&--mini {
+		font-size: 14px;
+		line-height: 1.6;
+		@include res(l) {
+			font-size: 12px;
+		}
+	}
 }

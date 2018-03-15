@@ -1,7 +1,7 @@
 .big-head-sec {
 	padding-bottom: $pad-l;
 	padding-top: $pad-l;
-	background: url("../img/big-head/bg-big-head.jpg") no-repeat center top;
+	background: url("../img/big-head/bg-big-head.jpg") no-repeat center top, $blue;
 	background-size: cover;
 	@include res(m) {
 		padding-bottom: $pad-m;

@@ -65,6 +65,17 @@
 		left: initial;
 		padding-bottom: $pad-xs;
 	}
+	.user-content {
+		opacity: 0;
+		transition: all 0.6s ease;
+		transform: translate3d(0,20px,0);
+	}
+	&.animated {
+		.user-content {
+			opacity: 1;
+			transform: translate3d(0,0,0);
+		}
+	}
 }
 
 .benefits__slider {

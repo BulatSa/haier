@@ -1,0 +1,257 @@
+.footer-sec {
+	overflow: hidden;
+}
+
+.footer {}
+
+.footer__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: $pad-m;
+	@include res(l) {
+		padding-bottom: $pad-s;
+	}
+}
+
+.footer__top-logo {
+	img {
+		max-width: 101px;
+		display: block;
+		@include res(xxs) {
+			max-width: 70px;
+		}
+	}
+}
+
+.footer__top-contact {
+	display: flex;
+	align-items: center;
+}
+
+.footer__top-contact-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 54px;
+	height: 54px;
+	margin-right: 15px;
+	border: 2px solid $blue;
+	border-radius: 50%;
+	color: $blue;
+	font-size: 22px;
+	@include res(s) {
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+		font-size: 18px;
+	}
+	@include res(xxs) {
+		width: 36px;
+		height: 36px;
+		margin-right: 5px;
+		font-size: 16px;
+	}
+}
+
+.footer__top-contact-phone {
+	color: $blue;
+	font-weight: 600;
+	p {
+		padding-bottom: 3px;
+		text-transform: uppercase;
+		font-size: 14px;
+		@include res(l) {
+			font-size: 12px;
+		}
+		@include res(s) {
+			font-size: 10px;
+		}
+		@include res(xxs) {
+			font-size: 8px;
+		}
+	}
+	a {
+		display: block;
+		line-height: 1;
+		font-size: 26px;
+		@include res(l) {
+			font-size: 22px;
+		}
+		@include res(s) {
+			font-size: 18px;
+		}
+		@include res(xs) {
+			font-size: 16px;
+		}
+	}
+}
+
+.footer__top-soc {
+	display: flex;
+	align-items: center;
+	@include res(xs) {
+		width: 100%;
+		padding-top: $pad-xs;
+	}
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 54px;
+		height: 54px;
+		margin-left: 20px;
+		border: 2px solid #bebebe;
+		border-radius: 50%;
+		font-size: 24px;
+		color: #bebebe;
+		transition: all 0.3s ease;
+		@include res(s) {
+			width: 42px;
+			height: 42px;
+			font-size: 18px;
+		}
+		&:hover {
+			border-color: $blue;
+			color: #fff;
+			background: $blue;
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		.i-soc-vk {
+			margin-left: 2px;
+		}
+	}
+}
+
+
+.footer__bottom {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: $pad-m;
+	@include res(l) {
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
+	@include res(xs) {
+		padding-bottom: $pad-xxs;
+	}
+}
+
+.footer__bottom-col {
+	max-width: 25%;
+	font-size: 14px;
+	@include res(l) {
+		font-size: 12px;
+	}
+	@include res(s) {
+		width: 50%;
+		max-width: initial;
+		padding-bottom: $pad-xs;
+	}
+	span {
+		display: block;
+		padding-bottom: 4px;
+	}
+	a {
+		color: $blue;
+	}
+	&:nth-child(2n) {
+		@include res(s) {
+			text-align: right;
+		}
+	}
+	&--develop {
+		display: flex;
+		justify-content: flex-end;
+		@include res(s) {
+			padding-left: 10px;
+		}
+		img {
+			display: block;
+			flex-shrink: 0;
+			max-width: 154px;
+			width: 100%;
+		}
+	}
+}
+
+
+.footer__descr {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: $pad-s;
+	padding-bottom: $pad-s;
+	background: #f7f9fc;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: inherit;
+	}
+	&:before {
+		left: -100%;
+	}
+	&:after {
+		right: -100%;
+	}
+}
+
+.footer__descr-info {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	@include res(xs) {
+		width: 100%;
+		padding-bottom: $pad-xs;
+	}
+	&:first-child {
+		padding-right: 3%;
+		@include res(xs) {
+			padding-right: 0;
+		}
+	}
+	&:last-child {
+		padding-left: 3%;
+		@include res(xs) {
+			padding-left: 0;
+			padding-bottom: 0;
+		}
+	}
+	img {
+		max-width: 62px;
+		margin-right: 20px;
+	}
+}
+
+.footer-bg {
+	height: 405px;
+	margin-bottom: $pad-m;
+	background: url("../img/footer/bg-footer.jpg") no-repeat top center;
+	background-size: cover;
+	@include res(l) {
+		height: 260px;
+	}
+	@include res(s) {
+		height: 220px;
+		margin-bottom: $pad-s;
+	}
+	@include res(xs) {
+		height: 200px;
+	}
+	@include res(xxs) {
+		height: 160px;
+	}
+}

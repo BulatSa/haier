@@ -80,6 +80,19 @@
 	}
 }
 
+.def-sec-top {
+	padding-top: $pad-xl;
+	@include res(xl) {
+		padding-top: $pad-l;
+	}
+	@include res(l) {
+		padding-top: $pad-m;
+	}
+	@include res(s) {
+		padding-top: $pad-s;
+	}
+}
+
 .clearfix{
 	&:before{
 		content: " ";
