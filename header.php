@@ -15,21 +15,20 @@
 	<title>Haier</title>
 
 	<!-- favocons -->
-	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="manifest" href="favicons/site.webmanifest">
 	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="favicons/favicon.ico">
-	<meta name="msapplication-config" content="favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#00124e">
+	<meta name="theme-color" content="#00124e">
 	<!-- favocons -->
 
 	<!-- og -->
-	<meta property="og:title" content="Шаблон проекта">
-	<meta property="og:description" content="Описание проекта">
+	<meta property="og:title" content="Посетите первый фирменный магазин Haier в России!">
+	<meta property="og:description" content="У нас вы найдете более 100 моделей бытовой техники и электроники для дома или квартиры по разумным ценам.">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="/img/og.jpg">
+	<meta property="og:image" content="http://demo.penbrain.ru/haier/img/og.jpg">
 	<!-- og -->
 
 	<link href="css/main.css" rel="stylesheet">

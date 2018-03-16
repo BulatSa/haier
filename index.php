@@ -61,7 +61,7 @@
 		</div>
 	</div>
 	<div class="about__img">
-		<svg id="about-big-bg" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" width="1923.16" height="789.86" viewBox="0 0 1923.16 789.86">
+		<svg id="about-big-bg" xmlns="http://www.w3.org/2000/svg" width="1923.16" height="789.86" viewBox="0 0 1923.16 789.86">
 			<defs>
 				<style>
 					.cls-1,.cls-10,.cls-17,.cls-19,.cls-3,.cls-4{fill:none}.cls-1,.cls-10,.cls-17,.cls-18,.cls-19,.cls-2,.cls-3,.cls-4,.cls-5{stroke:#005aaa;stroke-miterlimit:10}.cls-1,.cls-2{stroke-width:1.64px}.cls-2,.cls-5{fill:#fff}.cls-3{stroke-width:1.4px}.cls-4{stroke-width:1.5px}.cls-5{stroke-width:1.67px}.cls-18,.cls-6,.cls-7{fill:#005aaa}.cls-6{fill-rule:evenodd}.cls-10{stroke-width:1.69px}.cls-17{stroke-width:1.13px}.cls-18{stroke-width:.28px}.cls-19{stroke-width:1.55px}
@@ -263,15 +263,15 @@
 	</div>
 	<div class="adress-bg anim">
 		<div class="trinagle-list">
-			<img src="img/map/triangle-1.png" class="triangle-1 anim" alt="">
-			<img src="img/map/triangle-2.png" class="triangle-2 anim" alt="">
-			<img src="img/map/triangle-3.png" class="triangle-3 anim" alt="">
-			<img src="img/map/triangle-4.png" class="triangle-4 anim" alt="">
-			<img src="img/map/triangle-5.png" class="triangle-5 anim" alt="">
-			<img src="img/map/triangle-6.png" class="triangle-6 anim" alt="">
-			<img src="img/map/triangle-7.png" class="triangle-7 anim" alt="">
-			<img src="img/map/triangle-8.png" class="triangle-8 anim" alt="">
-			<img src="img/map/triangle-9.png" class="triangle-9 anim" alt="">
+			<img src="" data-img-src='img/map/triangle-1.png' class="triangle-1 anim" alt="">
+			<img src="" data-img-src='img/map/triangle-2.png' class="triangle-2 anim" alt="">
+			<img src="" data-img-src='img/map/triangle-3.png' class="triangle-3 anim" alt="">
+			<img src="" data-img-src='img/map/triangle-4.png' class="triangle-4 anim" alt="">
+			<img src="" data-img-src='img/map/triangle-5.png' class="triangle-5 anim" alt="">
+			<img src="" data-img-src='img/map/triangle-6.png' class="triangle-6 anim" alt="">
+			<img src="" data-img-src='img/map/triangle-7.png' class="triangle-7 anim" alt="">
+			<img src="" data-img-src='img/map/triangle-8.png' class="triangle-8 anim" alt="">
+			<img src="" data-img-src='img/map/triangle-9.png' class="triangle-9 anim" alt="">
 		</div>
 	</div>
 </section>
@@ -309,7 +309,7 @@
 					position: new google.maps.LatLng(55.744728, 52.380604),
 					map: map,
 					title: 'Набережные Челны, Проспект Чулман, 87А',
-					icon: '/img/map-bubble.png'
+					icon: 'img/map-bubble.png'
 				});
 			}
 		</script>

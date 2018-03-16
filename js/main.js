@@ -185,16 +185,18 @@ $(function () {
 		offset: '85%'
 	});
 
-	var aboutBigBg = new Vivus('about-big-bg', {
-		duration: 300,
-		start: 'manual'
-	});
+	if($(window).width() > 1024) {
+		var aboutBigBg = new Vivus('about-big-bg', {
+			duration: 300,
+			start: 'manual'
+		});
 
-	$('#about-big-bg').waypoint(function () {
-		aboutBigBg.play();
-	}, {
-		offset: '75%'
-	});
+		$('#about-big-bg').waypoint(function () {
+			aboutBigBg.play();
+		}, {
+			offset: '75%'
+		});
+	}
 });
 /***********************
  Waypoints END
@@ -274,4 +276,19 @@ $(function () {
 });
 /***********************
 Slick END
+***********************/
+
+
+/***********************
+Img Src Replace BEGIN
+***********************/
+$(document).ready(function() {
+	if($(window).width() > 1024) {
+		$('[data-img-src]').each(function (indx, el) {
+			$(el).attr('src', $(this).data('img-src'));
+		});
+	}
+});
+/***********************
+Img Src Replace END
 ***********************/
