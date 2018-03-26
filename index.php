@@ -200,7 +200,7 @@
 					<p>Жители Российской Федерации могут воспользоваться бесплатной доставкой. О доставке можно прочитать на нашем официальном сайте в разделе Доставка.</p>
 				</div>
 				<div class="benefits__slide-img">
-					<img src="img/benefits/slide-1.png" alt="">
+					<img src="img/benefits/slide-1.svg" alt="">
 				</div>
 			</div>
 			<div class="benefits__slide">
@@ -209,7 +209,7 @@
 					<p>Общая гарантия на всю инновационную продукцию Haier.</p>
 				</div>
 				<div class="benefits__slide-img">
-					<img src="img/benefits/slide-2.png" alt="">
+					<img src="img/benefits/slide-2.svg" alt="">
 				</div>
 			</div>
 			<div class="benefits__slide">
@@ -218,7 +218,7 @@
 					<p>Грамотно утилизируем старую технику.</p>
 				</div>
 				<div class="benefits__slide-img">
-					<img src="img/benefits/slide-3.png" alt="">
+					<img src="img/benefits/slide-3.svg" alt="">
 				</div>
 			</div>
 			<div class="benefits__slide">
@@ -227,7 +227,7 @@
 					<p>Жители Российской Федерации могут воспользоваться бесплатной доставкой. О доставке можно прочитать на нашем официальном сайте в разделе Доставка.</p>
 				</div>
 				<div class="benefits__slide-img">
-					<img src="img/benefits/slide-4.png" alt="">
+					<img src="img/benefits/slide-4.svg" alt="">
 				</div>
 			</div>
 		</div>

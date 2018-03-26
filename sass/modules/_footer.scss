@@ -239,7 +239,7 @@
 .footer-bg {
 	height: 405px;
 	margin-bottom: $pad-m;
-	background: url("../img/footer/bg-footer.jpg") no-repeat top center;
+	background: url("../img/footer/bg-footer.svg") no-repeat top center;
 	background-size: cover;
 	@include res(l) {
 		height: 260px;

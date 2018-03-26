@@ -2955,7 +2955,7 @@ button::-moz-focus-inner {
 .footer-bg {
   height: 405px;
   margin-bottom: 60px;
-  background: url("../img/footer/bg-footer.jpg") no-repeat top center;
+  background: url("../img/footer/bg-footer.svg") no-repeat top center;
   background-size: cover; }
   @media (max-width: 1024px) {
     .footer-bg {
