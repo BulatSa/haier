@@ -162,6 +162,11 @@
 	}
 	a {
 		color: $blue;
+		border-bottom: 1px solid transparent;
+		transition: all 0.3s ease;
+		&:hover {
+			border-color: $blue;
+		}
 	}
 	&:nth-child(2n) {
 		@include res(s) {
@@ -173,6 +178,9 @@
 		justify-content: flex-end;
 		@include res(s) {
 			padding-left: 10px;
+		}
+		a {
+			border: none;
 		}
 		img {
 			display: block;

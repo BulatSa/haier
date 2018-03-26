@@ -33,10 +33,15 @@
 	.btn {
 		color: #fff;
 		opacity: 0;
-		transition: all 0.6s ease 0.6s;
 		transform: translate3d(0,20px,0);
 	}
 	&.animated {
+		.adress__info-contact {
+			transition: all 0.6s ease 0.3s;
+		}
+		.btn {
+			transition: opacity 0.6s ease 0.6s, transform 0.6s ease 0.6s, background 0.3s ease, border 0.3s ease;
+		}
 		.user-content,.adress__info-contact, .btn {
 			opacity: 1;
 			transform: translate3d(0,0,0);
@@ -50,7 +55,6 @@
 	font-size: 16px;
 	line-height: 1.4;
 	opacity: 0;
-	transition: all 0.6s ease 0.3s;
 	transform: translate3d(0,20px,0);
 	@include res(l) {
 		font-size: 14px;
@@ -115,69 +119,78 @@
 			transition-timing-function: ease;
 			opacity: 1;
 			transform: translate3d(0,0,0);
+			.triangle-1 {
+				transition-delay: 0.6s;
+			}
+			.triangle-2 {
+				transition-delay: 0.8s;
+			}
+			.triangle-3 {
+				transition-delay: 0.4s;
+			}
+			.triangle-4 {
+				transition-delay: 0.6s;
+			}
+			.triangle-5 {
+				transition-delay: 0.4s;
+			}
+			.triangle-6 {
+				transition-delay: 0.8s;
+			}
+			.triangle-7 {
+				transition-delay: 0.6s;
+			}
+			.triangle-8 {
+				transition-delay: 0.4s;
+			}
+			.triangle-9 {
+				transition-delay: 0.4s;
+			}
 		}
 	}
 	.triangle-1 {
 		left: 0;
 		bottom: 0;
-		transition-delay: 0.6s;
 		transform: translate3d(-20px,0,0);
 	}
 	.triangle-2 {
 		left: 230px;
 		bottom: 560px;
-		transition-delay: 0.8s;
 		transform: translate3d(0,-30px,0);
 	}
 	.triangle-3 {
 		left: 230px;
 		bottom: 148px;
-		transition-delay: 0.4s;
 		transform: translate3d(0,30px,0);
 	 }
 	.triangle-4 {
 		left: 592px;
 		bottom: 150px;
-		transition-delay: 0.6s;
 		transform: translate3d(20px,-30px,0);
 	}
 	.triangle-5 {
 		left: 1275px;
 		bottom: 935px;
-		transition-delay: 0.4s;
 		transform: translate3d(-20px,-30px,0);
 	}
 	.triangle-6 {
 		left: 1230px;
 		bottom: 460px;
-		transition-delay: 0.8s;
 		transform: translate3d(-20px,30px,0);
 	}
 	.triangle-7 {
 		left: 1015px;
 		bottom: 150px;
-		transition-delay: 0.6s;
 		transform: translate3d(0,30px,0);
 	}
 	.triangle-8 {
 		left: 1240px;
 		bottom: 170px;
-		transition-delay: 0.4s;
 		transform: translate3d(0,30px,0);
 	}
 	.triangle-9 {
 		right: 0;
 		bottom: 150px;
-		transition-delay: 0.4s;
 		transform: translate3d(30px,0,0);
-	}
-	&.animated {
-		img {
-			transition-property: all;
-			transition-duration: 1s;
-			transition-timing-function: ease;
-			opacity: 1;
-			transform: translate3d(0,0,0);
-		}
 	}
 }

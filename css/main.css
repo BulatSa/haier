@@ -2437,11 +2437,18 @@ button::-moz-focus-inner {
   .adress__info .btn {
     color: #fff;
     opacity: 0;
-    -webkit-transition: all 0.6s ease 0.6s;
-    -o-transition: all 0.6s ease 0.6s;
-    transition: all 0.6s ease 0.6s;
     -webkit-transform: translate3d(0, 20px, 0);
     transform: translate3d(0, 20px, 0); }
+  .adress__info.animated .adress__info-contact {
+    -webkit-transition: all 0.6s ease 0.3s;
+    -o-transition: all 0.6s ease 0.3s;
+    transition: all 0.6s ease 0.3s; }
+  .adress__info.animated .btn {
+    -webkit-transition: opacity 0.6s ease 0.6s, background 0.3s ease, border 0.3s ease, -webkit-transform 0.6s ease 0.6s;
+    transition: opacity 0.6s ease 0.6s, background 0.3s ease, border 0.3s ease, -webkit-transform 0.6s ease 0.6s;
+    -o-transition: opacity 0.6s ease 0.6s, transform 0.6s ease 0.6s, background 0.3s ease, border 0.3s ease;
+    transition: opacity 0.6s ease 0.6s, transform 0.6s ease 0.6s, background 0.3s ease, border 0.3s ease;
+    transition: opacity 0.6s ease 0.6s, transform 0.6s ease 0.6s, background 0.3s ease, border 0.3s ease, -webkit-transform 0.6s ease 0.6s; }
   .adress__info.animated .user-content, .adress__info.animated .adress__info-contact, .adress__info.animated .btn {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -2453,9 +2460,6 @@ button::-moz-focus-inner {
   font-size: 16px;
   line-height: 1.4;
   opacity: 0;
-  -webkit-transition: all 0.6s ease 0.3s;
-  -o-transition: all 0.6s ease 0.3s;
-  transition: all 0.6s ease 0.3s;
   -webkit-transform: translate3d(0, 20px, 0);
   transform: translate3d(0, 20px, 0); }
   @media (max-width: 1024px) {
@@ -2526,91 +2530,87 @@ button::-moz-focus-inner {
       opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
+      .trinagle-list img.animated .triangle-1 {
+        -webkit-transition-delay: 0.6s;
+        -o-transition-delay: 0.6s;
+        transition-delay: 0.6s; }
+      .trinagle-list img.animated .triangle-2 {
+        -webkit-transition-delay: 0.8s;
+        -o-transition-delay: 0.8s;
+        transition-delay: 0.8s; }
+      .trinagle-list img.animated .triangle-3 {
+        -webkit-transition-delay: 0.4s;
+        -o-transition-delay: 0.4s;
+        transition-delay: 0.4s; }
+      .trinagle-list img.animated .triangle-4 {
+        -webkit-transition-delay: 0.6s;
+        -o-transition-delay: 0.6s;
+        transition-delay: 0.6s; }
+      .trinagle-list img.animated .triangle-5 {
+        -webkit-transition-delay: 0.4s;
+        -o-transition-delay: 0.4s;
+        transition-delay: 0.4s; }
+      .trinagle-list img.animated .triangle-6 {
+        -webkit-transition-delay: 0.8s;
+        -o-transition-delay: 0.8s;
+        transition-delay: 0.8s; }
+      .trinagle-list img.animated .triangle-7 {
+        -webkit-transition-delay: 0.6s;
+        -o-transition-delay: 0.6s;
+        transition-delay: 0.6s; }
+      .trinagle-list img.animated .triangle-8 {
+        -webkit-transition-delay: 0.4s;
+        -o-transition-delay: 0.4s;
+        transition-delay: 0.4s; }
+      .trinagle-list img.animated .triangle-9 {
+        -webkit-transition-delay: 0.4s;
+        -o-transition-delay: 0.4s;
+        transition-delay: 0.4s; }
   .trinagle-list .triangle-1 {
     left: 0;
     bottom: 0;
-    -webkit-transition-delay: 0.6s;
-    -o-transition-delay: 0.6s;
-    transition-delay: 0.6s;
     -webkit-transform: translate3d(-20px, 0, 0);
     transform: translate3d(-20px, 0, 0); }
   .trinagle-list .triangle-2 {
     left: 230px;
     bottom: 560px;
-    -webkit-transition-delay: 0.8s;
-    -o-transition-delay: 0.8s;
-    transition-delay: 0.8s;
     -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0); }
   .trinagle-list .triangle-3 {
     left: 230px;
     bottom: 148px;
-    -webkit-transition-delay: 0.4s;
-    -o-transition-delay: 0.4s;
-    transition-delay: 0.4s;
     -webkit-transform: translate3d(0, 30px, 0);
     transform: translate3d(0, 30px, 0); }
   .trinagle-list .triangle-4 {
     left: 592px;
     bottom: 150px;
-    -webkit-transition-delay: 0.6s;
-    -o-transition-delay: 0.6s;
-    transition-delay: 0.6s;
     -webkit-transform: translate3d(20px, -30px, 0);
     transform: translate3d(20px, -30px, 0); }
   .trinagle-list .triangle-5 {
     left: 1275px;
     bottom: 935px;
-    -webkit-transition-delay: 0.4s;
-    -o-transition-delay: 0.4s;
-    transition-delay: 0.4s;
     -webkit-transform: translate3d(-20px, -30px, 0);
     transform: translate3d(-20px, -30px, 0); }
   .trinagle-list .triangle-6 {
     left: 1230px;
     bottom: 460px;
-    -webkit-transition-delay: 0.8s;
-    -o-transition-delay: 0.8s;
-    transition-delay: 0.8s;
     -webkit-transform: translate3d(-20px, 30px, 0);
     transform: translate3d(-20px, 30px, 0); }
   .trinagle-list .triangle-7 {
     left: 1015px;
     bottom: 150px;
-    -webkit-transition-delay: 0.6s;
-    -o-transition-delay: 0.6s;
-    transition-delay: 0.6s;
     -webkit-transform: translate3d(0, 30px, 0);
     transform: translate3d(0, 30px, 0); }
   .trinagle-list .triangle-8 {
     left: 1240px;
     bottom: 170px;
-    -webkit-transition-delay: 0.4s;
-    -o-transition-delay: 0.4s;
-    transition-delay: 0.4s;
     -webkit-transform: translate3d(0, 30px, 0);
     transform: translate3d(0, 30px, 0); }
   .trinagle-list .triangle-9 {
     right: 0;
     bottom: 150px;
-    -webkit-transition-delay: 0.4s;
-    -o-transition-delay: 0.4s;
-    transition-delay: 0.4s;
     -webkit-transform: translate3d(30px, 0, 0);
     transform: translate3d(30px, 0, 0); }
-  .trinagle-list.animated img {
-    -webkit-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
 
 .map-sec {
   overflow: hidden; }
@@ -2876,7 +2876,13 @@ button::-moz-focus-inner {
     display: block;
     padding-bottom: 4px; }
   .footer__bottom-col a {
-    color: #005aaa; }
+    color: #005aaa;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .footer__bottom-col a:hover {
+      border-color: #005aaa; }
   @media (max-width: 680px) {
     .footer__bottom-col:nth-child(2n) {
       text-align: right; } }
@@ -2890,6 +2896,8 @@ button::-moz-focus-inner {
     @media (max-width: 680px) {
       .footer__bottom-col--develop {
         padding-left: 10px; } }
+    .footer__bottom-col--develop a {
+      border: none; }
     .footer__bottom-col--develop img {
       display: block;
       -ms-flex-negative: 0;
